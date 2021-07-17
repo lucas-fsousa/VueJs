@@ -5,7 +5,6 @@
     <PrimeiroComponente />
     <LifeCycle />
     <Pessoa />
-    
   </div>
 </template>
 <script>
@@ -29,3 +28,11 @@
     }
   }
 </script>
+
+<style>
+body{
+  margin: 2%;
+  padding: 1%;
+  color: #fff;
+}
+</style>
