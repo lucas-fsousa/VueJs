@@ -50,5 +50,4 @@ import Picture from "./Picture.vue";
   padding-right: 5px;
 
 }
-
 </style>

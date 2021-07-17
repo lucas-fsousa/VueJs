@@ -1,5 +1,6 @@
 <template>
   <div> <!-- COMPONENTES UTILIZADOS NO TEMPLATE -->
+    <Header />
     <h1>Olá Mundo</h1>
     <p>Isso é o que? {{testando}}</p>
     <PrimeiroComponente />
@@ -12,6 +13,7 @@
   import PrimeiroComponente from "./components/PrimeiroComponente.vue"
   import LifeCycle from "./components/LifeCycle.vue"
   import Pessoa from "./components/Pessoa.vue"
+  import Header from "./components/Header.vue"
 
   export default {
     name: 'App',
@@ -19,7 +21,8 @@
       /*Passo 2: Declarar o componente na área de componentes*/
       PrimeiroComponente,
       LifeCycle,
-      Pessoa
+      Pessoa,
+      Header
     },
     data(){
       return {
@@ -30,9 +33,13 @@
 </script>
 
 <style>
+
 body{
   margin: 2%;
   padding: 1%;
   color: #fff;
+}
+a {
+  color: red;
 }
 </style>
