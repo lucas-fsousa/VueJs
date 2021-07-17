@@ -15,7 +15,7 @@ import Picture from "./Picture.vue";
   export default {
     name: "Info",
     components: {
-      Picture
+      Picture,
     },
     data(){
       return {
