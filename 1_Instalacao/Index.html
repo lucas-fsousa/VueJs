@@ -10,7 +10,12 @@
 </head>
 <body>
   <div id="app">
-    <p>Meu nome é {{name}} e tenho {{idade}} anos!</p>
+    <form id="app-form">
+      <input type="text" v-model="input_name" placeholder="inform seu nome"/>
+      <input type="submit" id="btn_submit" value="Enviar" v-on:click="submitForm"/>
+    </form>
+    <p>Data Bining => Meu nome é: {{input_name}}</p>
+    <p>Modo Comum => Meu nome é: {{name}}</p>
   </div>
 </body>
 </html>
