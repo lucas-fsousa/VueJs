@@ -15,12 +15,12 @@
     created(){
       setTimeout(() =>{
         this.nome = "José TENSO"
-      }, 2000)
+      }, 2000);
     },
     mounted(){
       setTimeout(() =>{
         this.nome = "José menos tenso"
-      }, 4000)
+      }, 4000);
     }
   }
 
