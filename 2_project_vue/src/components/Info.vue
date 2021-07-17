@@ -1,19 +1,22 @@
 <template>
   <div>
-    <h2>Descrição da pessoa: {{name}} </h2>
-    <Info />
+    <p v-if="esta_trabalhando"> Está trabalhando no momento.</p>
+    <p v-else> Não está trabalhando no momento.</p>
+    <p v-show="mostrar_email">Envie um e-mail para: {{email}}</p>
   </div>
 </template>
 <script>
-  import Info from "./Info.vue"
+
   export default {
     name: "Info",
     components: {
-      Info
+      
     },
     data(){
       return {
-        nome: "",
+        esta_trabalhando: true,
+        mostrar_email: true,
+        email: "Fredericopietro@hotmail.com"
       }
     }
   }

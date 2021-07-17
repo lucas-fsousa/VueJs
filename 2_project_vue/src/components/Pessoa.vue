@@ -1,7 +1,7 @@
 <template>
   <div>
     <h2>Descrição da pessoa: {{name}} </h2>
-    <p>Estou trabalhando no momento.</p>
+    <Info />
     <p>Utilizo as seguintes tecnologias: </p>
     <ul>
       <li>Javascript</li>
@@ -12,8 +12,12 @@
   </div>
 </template>
 <script>
+import Info from "./Info.vue"
   export default {
     name: "Pessoa",
+    components: {
+      Info
+    },
     data(){
       return {
         nome: "",
