@@ -1,0 +1,5 @@
+{
+  "vetur.completion.scaffoldSnippetSources": {
+    "ctrl+1": "<template>   <div>    </div> </template>  <script>   export default {     name: \"\",     data(){       return {                }     }   }  </script>"
+  }
+}
