@@ -40,7 +40,6 @@
 body{
   margin: 2%;
   padding: 1%;
-  color: #fff;
 }
 a {
   color: red;
