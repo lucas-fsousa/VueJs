@@ -44,4 +44,14 @@ body{
 a {
   color: red;
 }
+
+button {
+  height: 30px;
+  border-radius: 2%;
+  background-color: rgb(255, 153, 0);
+  color: rgb(255, 0, 0);
+  font-weight: bold;
+  padding: 1px;
+  border: 3px solid rgba(170, 0, 255, 0.877);
+}
 </style>
