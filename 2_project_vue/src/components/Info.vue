@@ -5,6 +5,7 @@
     <p v-show="mostrar_email">Envie um e-mail para: {{email}}</p>
     <button @click="showEmail()" id="btn_show">{{text_btn}}</button>
     <p>Para acessar o meu portifólio <a v-bind:href="meu_link" target="_blank">CLIQUE AQUI</a></p>
+    <p>Email PROPS {{send_email}}</p>
     <div style="text-align: center; background-color: #616171;">
       <Picture />
     </div>
@@ -21,10 +22,12 @@ import Picture from "./Picture.vue";
       return {
         esta_trabalhando: true,
         mostrar_email: false,
-        email: "Fredericopietro@hotmail.com",
         meu_link: "http://google.com",
         text_btn: "Mostrar e-mail"
       }
+    },
+    props: {
+      email: String
     },
     methods: {
       showEmail(){

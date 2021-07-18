@@ -1,7 +1,7 @@
 <template>
   <div>
     <h2>Descrição da pessoa: {{name}} </h2>
-    <Info />
+    <Info :email="email"/>
     <p>Utilizo as seguintes tecnologias para back-end: </p>
     <ul>
       <!--FOREACH utilizando o VUE.JS para uma lista-->
@@ -29,7 +29,8 @@ import Info from "./Info.vue"
           {id: 1, language: 'HTML'}, 
           {id: 2, language: 'CSS'}, 
           {id: 3, language: 'VUE'}
-          ]
+          ],
+          email: "lucasggTS2@gmail.com"
       }
     }
   }
